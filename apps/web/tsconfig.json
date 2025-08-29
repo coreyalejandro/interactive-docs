@@ -1,0 +1,23 @@
+{
+  "extends": ["next/tsconfig"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@converter/*": ["../../packages/converter/src/*"],
+      "@pdf/*": ["../../packages/pdf/src/*"],
+      "@plugin-core/*": ["../../packages/plugin-core/src/*"],
+      "@storage/*": ["../../packages/storage/src/*"],
+      "@telemetry/*": ["../../packages/telemetry/src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
