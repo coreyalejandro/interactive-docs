@@ -7,7 +7,7 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import { Toc } from "@/components/Toc";
 import { SearchBox } from "@/components/SearchBox";
 import { EditorPanel } from "@/components/EditorPanel";
-import { track } from "@telemetry";
+import { track } from "@telemetry/index";
 
 export default function HomePage() {
   const [doc, setDoc] = useState<any>(null);

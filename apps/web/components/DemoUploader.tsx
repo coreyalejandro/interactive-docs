@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { convertMarkdownStringToAst } from "../../packages/converter/src/markdown";
-import { convertPdfToAst } from "../../packages/pdf/src/convert";
+import { convertMarkdownStringToAst } from "@converter/markdown";
+import { convertPdfToAst } from "@pdf/convert";
 
 type Props = { onLoaded: (doc: any) => void };
 

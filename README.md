@@ -25,7 +25,7 @@ A modern, local-first document conversion and editing system built with Next.js 
 
 ## Project Structure
 
-```
+```bash
 interactive-docs/
 ├── apps/
 │   └── web/                 # Next.js web application
@@ -45,23 +45,26 @@ interactive-docs/
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - pnpm (recommended) or npm
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd interactive-docs
 ```
 
 2. Install dependencies:
+
 ```bash
 pnpm install
 ```
 
 3. Start the development server:
+
 ```bash
 cd apps/web
 pnpm run dev
@@ -70,6 +73,7 @@ pnpm run dev
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ### Usage
+
 
 1. **Import Documents**: Click the file upload area and select a `.md` or `.pdf` file
 2. **Navigate**: Use the table of contents on the left to jump to sections
@@ -99,6 +103,7 @@ From the workspace root:
 
 ### Document Processing Pipeline
 
+
 1. **Import**: File upload triggers conversion based on file type
 2. **Parse**: Markdown uses Unified.js pipeline, PDFs use PDF.js
 3. **Transform**: Convert to internal AST format
@@ -116,6 +121,7 @@ The plugin core provides interfaces for:
 - Import/export capabilities
 
 ## Contributing
+
 
 1. Fork the repository
 2. Create a feature branch

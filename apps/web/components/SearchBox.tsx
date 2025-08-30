@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { track } from "@telemetry";
+import { track } from "@telemetry/index";
 export function SearchBox({ onChange }: { onChange: (q: string) => void }) {
   const [q, setQ] = useState("");
   const countRef = useRef(0);

@@ -2,8 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { convertMarkdownStringToAst } from "@converter/markdown";
-import { saveDoc, loadDoc } from "@storage";
-import { track } from "@telemetry";
+import { saveDoc, loadDoc } from "@storage/index";
+import { track } from "@telemetry/index";
 
 type Doc = { title?: string; nodes: any[] };
 
